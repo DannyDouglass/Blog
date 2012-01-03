@@ -8,7 +8,8 @@ footer: false
 
 **Twitter**: [http://Twitter.com/DannyDouglass](http://Twitter.com/DannyDouglass)  
 **LinkedIn**: [http://LinkedIn.com/in/DannyDouglass](http://LinkedIn.com/in/DannyDouglass)  
-**Facebook**: [http://Facebook.com/DannyDouglass](http://Facebook.com/DannyDouglass)
+**Facebook**: [http://Facebook.com/DannyDouglass](http://Facebook.com/DannyDouglass)  
+[My Resume](/downloads/DanielDouglass_Resume.pdf)
 
 You may have figured out by now that my name is Danny Douglass and I am a big fan of technology. As far as software development is concerned, Microsoft ASP.Net development tends to be my bread and butter, but my development interests go far beyond .Net. I make a dedicated effort to stay apprised of the latest and greatest, and I welcome the opportunity to try those new technology. Some might say that I'm a bit of an Apple fanboy...so far I've guilty of dishing out my hard earned greenbacks for a MacBook Air, iPod Nano, (2) iPod Shuffles, a MacBook Pro, an iPhone 3GS and 4S, and (2) iPads - which I use to read up on all the latest [publications](/bookshelf). 
 
