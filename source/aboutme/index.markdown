@@ -23,7 +23,7 @@ Currently I live in Alexandria, VA a few miles outside of Washington, DC. I'll g
 
 Sports are a huge part of my life, both as a fan and player. I play hockey several times a week in the [DC Street Hockey](http://DCStreetHockey.com) leagues...a site that I built from scratch using ASP.Net MVC 1, jQuery, SubSonic 3, and a variety of other tools. I continue to maintain the site and highly recommend the league if you are interested in playing hockey in the DC area.
 
-<img src="/images/aboutme/094.jpg" alt="2010 Haze Team | DC Street Hockey 4-Time Champions" title="Haze DC StreetHockey 4-Time Champions" width="240" height="180" />
+<img src="/images/aboutme/Haze2010.jpg" alt="2010 Haze Team | DC Street Hockey 4-Time Champions" title="Haze DC StreetHockey 4-Time Champions" width="240" height="180" />
 
 My most frequently used social networking sites are found above. Feel free to contact me at any of those mediums or at my personal email: [DDouglass (at) gmail (dot) com](mailto:DDouglass@gmail.com) (no link exchanges please).
 
