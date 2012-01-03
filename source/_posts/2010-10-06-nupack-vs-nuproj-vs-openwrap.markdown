@@ -5,14 +5,6 @@ layout: post
 slug: nupack-vs-nuproj-vs-openwrap
 status: publish
 title: NuPack vs. Nu (Nubular) vs. OpenWrap
-wordpress_id: '270'
-? ''
-: - ALT.NET
-  - Articles
-  - Nu
-  - NuPack
-  - OpenWrap
-  - Package Management
 ---
 
 The [ASP.NET MVC 3 Beta](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0abac7a3-b302-4644-bd43-febf300b2c51) was unofficially released yesterday (as far as I can tell) and the release notes include a quote about a package manager named NuPack:

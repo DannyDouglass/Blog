@@ -5,11 +5,6 @@ layout: post
 slug: whats-new-in-the-dotnet-world
 status: publish
 title: What's Nu in the .NET World?
-wordpress_id: '183'
-? ''
-: - Articles
-  - Nu
-  - Open Source
 ---
 
 If you thought the word "_Nu_" in the title of this blog post was misspelled, you are in for a treat.  And trust me, you are not the only one who made that grammatical assumption.

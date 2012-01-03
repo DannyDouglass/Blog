@@ -5,12 +5,6 @@ layout: post
 slug: create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents
 status: publish
 title: 'How to: Create a Recursive Ruby Script to replace File/Directory Names and File Contents'
-wordpress_id: '311'
-? ''
-: - Articles
-  - Open Source
-  - Ruby
-  - scripts
 ---
 
 Over this past weekend I began templating a project structure that we use at my [day/evening/night job](http://dannydouglass.com/aboutme/) to allow developers to simply execute a script and provide a few parameters to
@@ -36,7 +30,7 @@ invalidating paths used later in the loop.  For example, _/project/store_ is th
 
 **Original Directory Structure**   
 
-+ /project/store/  *** first to change ***  
++ /project/store/  - [*first to change*]  
 + /project/store/hats  
 + /project/store/jackets  
 

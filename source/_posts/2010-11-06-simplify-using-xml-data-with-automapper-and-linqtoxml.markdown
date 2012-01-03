@@ -5,12 +5,6 @@ layout: post
 slug: simplify-using-xml-data-with-automapper-and-linqtoxml
 status: publish
 title: Simplify Using Xml Data with AutoMapper and Linq-to-Xml
-wordpress_id: '306'
-? ''
-: - Articles
-  - ASP.NET
-  - automapper
-  - Open Source
 ---
 
 I recently ran into a scenario at work that required manually consuming several SOAP web services, which I’m sure you can imagine was rather monotonous. A co-worker (Seth Carney) and I tried a few different approaches, but we finally settled on a solution that simplified consumption of the xml and ultimately made the code more testable.  That solution centered around leveraging [AutoMapper](https://github.com/jbogard/AutoMapper), an open source object-object mapping tool, to create a link between the [XElements](http://msdn.microsoft.com/en-us/library/system.xml.linq.xelement.aspx) returned in the SOAP messages and custom contracts we created - in a reusable manner.

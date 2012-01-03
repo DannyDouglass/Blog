@@ -5,15 +5,6 @@ layout: post
 slug: console2powershellposhhg
 status: publish
 title: 'A Better Hg Command Line Interface: Console2 + PowerShell + Posh-Hg'
-wordpress_id: '293'
-? ''
-: - Articles
-  - Command Line!
-  - Console2
-  - Open Source
-  - Posh-Hg
-  - PowerShell
-  - Version Control
 ---
 
 Moving from Subversion to [Mercurial](http://mercurial.selenic.com/) was more than a change from a centralized version control system to a distributed solution.  I also found myself moving away from the explorer integration provided by the [Tortoise](http://tortoisehg.bitbucket.org/) products to the command line for the execution of my hg commands.  This approach is dramatically faster once you get used to the syntax, which really only takes a hot minute.
@@ -37,6 +28,7 @@ After installing PowerShell, we want to create a physical PowerShell profile fil
     New-Item -path $profile -type file -force
 
 After executing that command you can verify the file was created:  
+
 [![PowerShellProfileCreation](/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png)](http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png)
 
 ### 3. Posh-Hg Download and PowerShell Integration
@@ -84,5 +76,3 @@ You are now setup with a significantly more useful PowerShell command prompt tha
 **Added Bonus: **Take a look at ScottHa’s [blog post](http://www.hanselman.com/blog/IntroducingPowerShellPromptHere.aspx) on adding a “PowerShell Prompt Here” context menu item for Windows Explorer.  Very Handy!
 
 Hope you enjoy this as much as I did – thanks to [Jimmy Bogard](www.lostechies.com/blogs/jimmy_bogard/) for the exposure to Posh-Hg!  
-
-[![Shout it](http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fdannydouglass.com%2F2010%2F10%2Fconsole2powershellposhhg%2F)](http://dotnetshoutout.com/A-Better-Hg-Command-Line-Interface-Console2-PowerShell-Posh-Hg-DannyDouglasscom)

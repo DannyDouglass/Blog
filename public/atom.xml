@@ -4,7 +4,7 @@
   <title><![CDATA[DannyDouglass.com]]></title>
   <link href="http://DannyDouglass.com/atom.xml" rel="self"/>
   <link href="http://DannyDouglass.com/"/>
-  <updated>2012-01-02T21:20:42-05:00</updated>
+  <updated>2012-01-03T12:51:41-05:00</updated>
   <id>http://DannyDouglass.com/</id>
   <author>
     <name><![CDATA[Danny Douglass]]></name>
@@ -43,7 +43,7 @@ invalidating paths used later in the loop.  For example, <em>/project/store</em
 <p><strong>Original Directory Structure</strong></p>
 
 <ul>
-<li>/project/store/  <strong><em> first to change </em></strong></li>
+<li>/project/store/  - [<em>first to change</em>]</li>
 <li>/project/store/hats</li>
 <li>/project/store/jackets</li>
 </ul>
@@ -297,8 +297,9 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 <pre><code>New-Item -path $profile -type file -force
 </code></pre>
 
-<p>After executing that command you can verify the file was created:<br/>
-<a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png" alt="PowerShellProfileCreation" /></a></p>
+<p>After executing that command you can verify the file was created:</p>
+
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png" alt="PowerShellProfileCreation" /></a></p>
 
 <h3>3. Posh-Hg Download and PowerShell Integration</h3>
 
@@ -350,8 +351,6 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 <p><strong>Added Bonus: </strong>Take a look at ScottHa’s <a href="http://www.hanselman.com/blog/IntroducingPowerShellPromptHere.aspx">blog post</a> on adding a “PowerShell Prompt Here” context menu item for Windows Explorer.  Very Handy!</p>
 
 <p>Hope you enjoy this as much as I did – thanks to <a href="www.lostechies.com/blogs/jimmy_bogard/">Jimmy Bogard</a> for the exposure to Posh-Hg!</p>
-
-<p><a href="http://dotnetshoutout.com/A-Better-Hg-Command-Line-Interface-Console2-PowerShell-Posh-Hg-DannyDouglasscom"><img src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fdannydouglass.com%2F2010%2F10%2Fconsole2powershellposhhg%2F" alt="Shout it" /></a></p>
 ]]></content>
   </entry>
   
@@ -413,20 +412,17 @@ set of PowerShell cmdlets.</p>
 <p>I want to thank everyone that battled the weather last night to make it to the presentation.  I really enjoyed my first opportunity to present at an ALT.NET event.  Also, thanks to <a href="http://weblogs.asp.net/Podwysocki/">Matthew Podwysocki</a> for allowing me to speak last night.  I believe I’ve included everything below that I discussed last night. If you take time to review the slideshow, I’d recommended using one of the two links below the embedded slideshow as they contain the speaker notes with a lot of information.</p>
 
 <p><a href="https://docs.google.com/present/view?id=dg63kd2x_69f9mmx5cx">Link to Google Presentation</a> |
-<a href="http://DannyDouglass.com/downloads/The_Current_State_of_Package_Management_in_ASPNET.ppt">Download PowerPoint</a></p>
-
-<p><strong><em> both links offer speaker notes with more information </em></strong></p>
+<a href="http://DannyDouglass.com/downloads/The_Current_State_of_Package_Management_in_ASPNET.ppt">Download PowerPoint</a><br/>
+<em>both links offer speaker notes with more information</em></p>
 
 <h3>Gem Creation Example</h3>
 
 <p>I showed how to use Nu to download and install packages, as well as how to actually create a Ruby gem that can be utilized with Nu.  Below are the links to the PagedList project before refactoring for gem creation and after I modified the project.</p>
 
 <ul>
-<li><p><strong>Before</strong>: <a href="http://github.com/TroyGoode/PagedList">http://github.com/TroyGoode/PagedList</a>  <br/>
-     [May 7, 2010 Commit]</p></li>
-<li><p><strong>After</strong>: <a href="http://github.com/DannyDouglass/PagedList">http://github.com/DannyDouglass/PagedList</a>  <br/>
-     [Gem built and pushed from this code]</p></li>
-<li><p><strong>Resulting Gem</strong>: <a href="http://rubygems.org/gems/PagedList">http://rubygems.org/gems/PagedList</a></p></li>
+<li><strong>Before</strong>: <a href="http://github.com/TroyGoode/PagedList">http://github.com/TroyGoode/PagedList</a> [May 7, 2010 Commit]</li>
+<li><strong>After</strong>: <a href="http://github.com/DannyDouglass/PagedList">http://github.com/DannyDouglass/PagedList</a> [Gem built and pushed from this code]</li>
+<li><strong>Resulting Gem</strong>: <a href="http://rubygems.org/gems/PagedList">http://rubygems.org/gems/PagedList</a></li>
 </ul>
 
 
@@ -468,9 +464,9 @@ set of PowerShell cmdlets.</p>
 
 <p><strong><em>Creating the Gem Specification</em> </strong>(GemSpec)</p>
 
-<p><a href="http://devlicio.us/blogs/rob_reynolds/default.aspx">Rob Reynolds</a> described this file as “the most important file for this entire process”.  The gemspec file will be named after the project – in this case it is named <strong>sparkviewengine.gemspec</strong> and will be placed inside my sparkviewengine directory.  While we are creating files we can also create a <strong>VERSION</strong> file that, you may have guessed, stores the version of the gem.  We now have a directory with 2 files:
-<img src="../images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="Image Thumb4" />
-<a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="image" /></a></p>
+<p><a href="http://devlicio.us/blogs/rob_reynolds/default.aspx">Rob Reynolds</a> described this file as “the most important file for this entire process”.  The gemspec file will be named after the project – in this case it is named <strong>sparkviewengine.gemspec</strong> and will be placed inside my sparkviewengine directory.  While we are creating files we can also create a <strong>VERSION</strong> file that, you may have guessed, stores the version of the gem.  We now have a directory with 2 files:</p>
+
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="image" /></a></p>
 
 <p>Below is the code from my <strong>sparkviewengine.gemspec</strong> file, you would simply replace the values with those applicable to the gem you are creating:</p>
 
@@ -504,8 +500,9 @@ end
 
 <p>The hard part is finished in creating our basic gem, now we need to include the spark compiled dlls.  For this example we are creating a basic gem and do not have to deal with dependencies.  My next gem will be more detailed and I will discuss what steps are necessary to <a href="http://devlicio.us/blogs/rob_reynolds/archive/2010/07/17/how-to-gems-and-net-dependencies-references.aspx">handle dependencies</a>.</p>
 
-<p>For the SparkViewEngine gem we can simply copy the libraries from the bin directory of the Spark 1.1.0.0 release:
-<a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png" alt="image" />)</a>)</p>
+<p>For the SparkViewEngine gem we can simply copy the libraries from the bin directory of the Spark 1.1.0.0 release:</p>
+
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png" alt="image" /></a></p>
 
 <p>and place them into a new <strong>lib</strong> directory in my SparkViewEngine gem directory:</p>
 
@@ -559,8 +556,6 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
 <li><p><strong>Nu Google Group Thread:</strong> <a href="http://groups.google.com/group/nu-net/browse_thread/thread/3d4a9618412fd2a4">http://groups.google.com/group/nu-net/browse_thread/thread/3d4a9618412fd2a4</a></p></li>
 </ul>
 
-
-<p><a href="http://dotnetshoutout.com/Whats-Nu-in-the-NET-World-Part-2-Creating-a-Gem"><img src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fdannydouglass.com%2F2010%2F08%2Fwhats-nu-in-the-dotnet-world-part2-creating-a-gem%2F" alt="Shout it" /></a></p>
 ]]></content>
   </entry>
   
@@ -698,8 +693,6 @@ namespace Nu_AspNetMvc2_Demo
 <p>The last change is to set the appropriate directory permissions on the remote server to the location where developers are permitted to create repositories. That should be straightforward enough without going into any examples since repository architectures can differ drastically.</p>
 
 <p>It can’t be that easy, can it? Well, good news – it is that simple!  With those changes you should be able to remote manage (create and delete) your Mercurial (Hg) repositories via PowerShell.  Hopefully this helps you save some time in your setup of Mercurial – a very awesome, and my current favorite, Version Control System.</p>
-
-<p><a href="http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fdannydouglass.com%2f2010%2f08%2fmercurial-create-remote-repositories-using-powershell%2f">Kick it on DotNetKicks!</a> | <a href="http://dotnetshoutout.com/Mercurial-Create-Remote-Repositories-Using-PowerShell">Shout it on DotNetShoutout!</a></p>
 ]]></content>
   </entry>
   

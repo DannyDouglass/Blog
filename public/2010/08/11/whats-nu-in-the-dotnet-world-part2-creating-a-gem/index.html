@@ -104,9 +104,9 @@
 
 <p><strong><em>Creating the Gem Specification</em> </strong>(GemSpec)</p>
 
-<p><a href="http://devlicio.us/blogs/rob_reynolds/default.aspx">Rob Reynolds</a> described this file as “the most important file for this entire process”.  The gemspec file will be named after the project – in this case it is named <strong>sparkviewengine.gemspec</strong> and will be placed inside my sparkviewengine directory.  While we are creating files we can also create a <strong>VERSION</strong> file that, you may have guessed, stores the version of the gem.  We now have a directory with 2 files:
-<img src="../images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="Image Thumb4" />
-<a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png"><img src="/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="image" /></a></p>
+<p><a href="http://devlicio.us/blogs/rob_reynolds/default.aspx">Rob Reynolds</a> described this file as “the most important file for this entire process”.  The gemspec file will be named after the project – in this case it is named <strong>sparkviewengine.gemspec</strong> and will be placed inside my sparkviewengine directory.  While we are creating files we can also create a <strong>VERSION</strong> file that, you may have guessed, stores the version of the gem.  We now have a directory with 2 files:</p>
+
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png"><img src="/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="image" /></a></p>
 
 <p>Below is the code from my <strong>sparkviewengine.gemspec</strong> file, you would simply replace the values with those applicable to the gem you are creating:</p>
 
@@ -140,8 +140,9 @@ end
 
 <p>The hard part is finished in creating our basic gem, now we need to include the spark compiled dlls.  For this example we are creating a basic gem and do not have to deal with dependencies.  My next gem will be more detailed and I will discuss what steps are necessary to <a href="http://devlicio.us/blogs/rob_reynolds/archive/2010/07/17/how-to-gems-and-net-dependencies-references.aspx">handle dependencies</a>.</p>
 
-<p>For the SparkViewEngine gem we can simply copy the libraries from the bin directory of the Spark 1.1.0.0 release:
-<a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png"><img src="/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png" alt="image" />)</a>)</p>
+<p>For the SparkViewEngine gem we can simply copy the libraries from the bin directory of the Spark 1.1.0.0 release:</p>
+
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png"><img src="/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png" alt="image" /></a></p>
 
 <p>and place them into a new <strong>lib</strong> directory in my SparkViewEngine gem directory:</p>
 
@@ -195,8 +196,6 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
 <li><p><strong>Nu Google Group Thread:</strong> <a href="http://groups.google.com/group/nu-net/browse_thread/thread/3d4a9618412fd2a4">http://groups.google.com/group/nu-net/browse_thread/thread/3d4a9618412fd2a4</a></p></li>
 </ul>
 
-
-<p><a href="http://dotnetshoutout.com/Whats-Nu-in-the-NET-World-Part-2-Creating-a-Gem"><img src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fdannydouglass.com%2F2010%2F08%2Fwhats-nu-in-the-dotnet-world-part2-creating-a-gem%2F" alt="Shout it" /></a></p>
 </div>
 
 

@@ -5,11 +5,6 @@ layout: post
 slug: mercurial-create-remote-repositories-using-powershell
 status: publish
 title: 'Mercurial: Create Remote Repositories Using PowerShell'
-wordpress_id: '163'
-? ''
-: - Articles
-  - Mercurial
-  - Version Control
 ---
 
 In case you are not familiar with Mercurial (Hg), it is a Distributed Version Control System (DVCS) aimed at simplifying revision control.  The purpose of this post is not to introduce Mercurial, but you can read more about Mercurial at the following links to get better acquainted with the software:
@@ -36,5 +31,3 @@ I originally encountered an **Access Denied** error, which we discovered was cau
 The last change is to set the appropriate directory permissions on the remote server to the location where developers are permitted to create repositories. That should be straightforward enough without going into any examples since repository architectures can differ drastically.
 
 It can’t be that easy, can it? Well, good news – it is that simple!  With those changes you should be able to remote manage (create and delete) your Mercurial (Hg) repositories via PowerShell.  Hopefully this helps you save some time in your setup of Mercurial – a very awesome, and my current favorite, Version Control System.
-
-[Kick it on DotNetKicks!](http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fdannydouglass.com%2f2010%2f08%2fmercurial-create-remote-repositories-using-powershell%2f) | [Shout it on DotNetShoutout!](http://dotnetshoutout.com/Mercurial-Create-Remote-Repositories-Using-PowerShell)
