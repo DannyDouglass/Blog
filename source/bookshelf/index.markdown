@@ -14,9 +14,14 @@ footer: false
 		<time datetime="2011-12-01T00:00:00-00:00" pubdate><span class='month'>Dec</span> <span class='day'>&nbsp;</span> <span class='year'>2011</span></time>
 	</article>
 	<article>
-  		<h1><a href="http://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898/" target="_blank">The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</a></h1>
+  		<h1><a href="http://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898/" target="_blank"><strong>The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</strong></a></h1>
 		<rating>Rating: 5 / 5</rating>
 		<time datetime="2011-11-01T00:00:00-00:00" pubdate><span class='month'>Nov</span> <span class='day'>&nbsp;</span> <span class='year'>2011</span></time>
+	</article>
+	<article>
+		<h1><a href="http://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912" target="_blank"><strong>Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation</strong></a></h1>
+		<rating>Rating: 4.5/5</rating>
+		<time datetime="2011-09-01T00:00:00-00:00" pubdate><span class='month'>Sept</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
 	</article>
 	<article>
   		<h1><a href="http://www.amazon.com/gp/product/1430234040/" target="_blank">Pro ASP.NET MVC 3 Framework</a></h1>
@@ -39,24 +44,33 @@ footer: false
 		<time datetime="2011-02-01T00:00:00-00:00" pubdate><span class='month'>Feb</span> <span class='day'>&nbsp;</span> <span class='year'>2011</span></time>
 	</article>
 	<article>
-  		<h1><a href="http://www.amazon.com/Peopleware-Productive-Projects-Teams-Second/dp/0932633439" target="_blank">Peopleware: Produtive Projects Teams</a></h1>
+  		<h1><a href="http://www.amazon.com/Peopleware-Productive-Projects-Teams-Second/dp/0932633439" target="_blank"><strong>Peopleware: Produtive Projects Teams</strong></a></h1>
 		<rating>Rating: 4.5 / 5</rating>
 		<time datetime="2011-01-01T00:00:00-00:00" pubdate><span class='month'>Jan</span> <span class='day'>&nbsp;</span> <span class='year'>2011</span></time>
 	</article>
-
 	<h2>2010</h2>
+	<article>
+		<h1><a href="http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/" target="_blank"><strong>Domain Driven Design</strong></a></h1>
+		<rating>Rating: 4/5</rating>
+		<time datetime="2010-12-01T00:00:00-00:00" pubdate><span class='month'>Dec</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
+	</article>
+	<article>
+		<h1><a href="http://www.amazon.com/Continuous-Integration-NET-Marcin-Kawalerowicz/dp/1935182552/">Continuous Integration in .NET</a></h1>
+		<rating>Rating: 4/5</rating>
+		<time datetime="2011-10-01T00:00:00-00:00" pubdate><span class='month'>Nov</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
+	</article>
   	<article>
 		<h1><a href="http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/" target="_blank">Refactoring: Improving the Design of Existing Code</a></h1>
-		<time datetime="2010-12-01T00:00:00-00:00" pubdate><span class='month'>Dec</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
+		<time datetime="2010-09-01T00:00:00-00:00" pubdate><span class='month'>Sep</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
 		<rating>Rating: 4.5 / 5</rating>
 	</article>
 	<article>
 		<h1><a href="http://www.amazon.com/Linchpin-Are-Indispensable-Seth-Godin/dp/1591843162/" target="_blank">Linchpin: Are You Indispensable?</a></h1>
-		<time datetime="2010-09-01T00:00:00-00:00" pubdate><span class='month'>Sep</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
+		<time datetime="2010-08-01T00:00:00-00:00" pubdate><span class='month'>Aug</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
 		<rating>Rating: 3.5 / 5</rating>
 	</article>
 	<article>
-		<h1><a href="http://www.amazon.com/gp/product/1933988274" target="_blank">The Art of Unit Testing</a></h1>
+		<h1><a href="http://www.amazon.com/gp/product/1933988274" target="_blank"><strong>The Art of Unit Testing</strong></a></h1>
 		<time datetime="2010-06-01T00:00:00-00:00" pubdate><span class='month'>Jun</span> <span class='day'>&nbsp;</span> <span class='year'>2010</span></time>
 		<rating>Rating: 4.5 / 5</rating>
 	</article>
