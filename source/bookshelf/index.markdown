@@ -7,6 +7,12 @@ footer: false
 ---
 
 <div id="blog-archives">
+	<h2>2012</h2>
+	<article>
+  		<h1><a href="http://www.amazon.com/The-Score-Takes-Care-Itself/dp/1591843472/" target="_blank">The Score Takes Care of Itself: My Philosophy of Leadership</a></h1>
+		<rating>Rating: 4 / 5</rating>
+		<time datetime="2012-07-01T00:00:00-00:00" pubdate><span class='month'>July</span> <span class='day'>&nbsp;</span> <span class='year'>2012</span></time>
+	</article>
 	<h2>2011</h2>
 	<article>
   		<h1><a href="http://www.amazon.com/Integrity-Courage-Meet-Demands-Reality/dp/006084969X/" target="_blank">Integrity: The Courage to Meet the Demands of Reality</a></h1>
