@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://DannyDouglass.github.io//github/sitemap.xml 
+Sitemap: http://DannyDouglass.com/sitemap.xml 

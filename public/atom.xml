@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Danny Douglass]]></title>
-  <link href="http://DannyDouglass.github.io//github/atom.xml" rel="self"/>
-  <link href="http://DannyDouglass.github.io//github/"/>
-  <updated>2013-07-22T09:22:43-04:00</updated>
-  <id>http://DannyDouglass.github.io//github/</id>
+  <link href="http://DannyDouglass.com/atom.xml" rel="self"/>
+  <link href="http://DannyDouglass.com/"/>
+  <updated>2013-07-22T14:23:41-04:00</updated>
+  <id>http://DannyDouglass.com/</id>
   <author>
     <name><![CDATA[Danny Douglass]]></name>
     
@@ -16,10 +16,10 @@
   <entry>
     
     <title type="html"><![CDATA[How to: Create a Recursive Ruby Script to replace File/Directory Names and File Contents]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2011/02/24/create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents/"/>
+    <link href="http://DannyDouglass.com/blog/2011/02/24/create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents/"/>
     
     <updated>2011-02-24T10:02:54-05:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2011/02/24/create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents</id>
+    <id>http://DannyDouglass.com/blog/2011/02/24/create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents</id>
     
     <content type="html"><![CDATA[<p>Over this past weekend I began templating a project structure that we use at my <a href="http://dannydouglass.com/aboutme/">day/evening/night job</a> to allow developers to simply execute a script and provide a few parameters to
 initialize a new development project (including build script, fxcop analysis, unit testing, visual studio projects, etc.).  I didn’t think this would take that long despite being relatively new to the Ruby world.</p>
@@ -117,10 +117,10 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
   <entry>
     
     <title type="html"><![CDATA[Simplify Using Xml Data with AutoMapper and Linq-to-Xml]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/11/06/simplify-using-xml-data-with-automapper-and-linqtoxml/"/>
+    <link href="http://DannyDouglass.com/blog/2010/11/06/simplify-using-xml-data-with-automapper-and-linqtoxml/"/>
     
     <updated>2010-11-06T13:50:09-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/11/06/simplify-using-xml-data-with-automapper-and-linqtoxml</id>
+    <id>http://DannyDouglass.com/blog/2010/11/06/simplify-using-xml-data-with-automapper-and-linqtoxml</id>
     
     <content type="html"><![CDATA[<p>I recently ran into a scenario at work that required manually consuming several SOAP web services, which I’m sure you can imagine was rather monotonous. A co-worker (Seth Carney) and I tried a few different approaches, but we finally settled on a solution that simplified consumption of the xml and ultimately made the code more testable.  That solution centered around leveraging <a href="https://github.com/jbogard/AutoMapper">AutoMapper</a>, an open source object-object mapping tool, to create a link between the <a href="http://msdn.microsoft.com/en-us/library/system.xml.linq.xelement.aspx">XElements</a> returned in the SOAP messages and custom contracts we created &ndash; in a reusable manner.</p>
 
@@ -266,7 +266,7 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 
 <p>And finally, after a little formatting in my <a href="https://github.com/DannyDouglass/AutoMapperXmlMappingDemo/blob/master/AutoMapperXmlDemo.Web/Views/Home/Index.cshtml">View</a> using the new <a href="http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx">Razor</a> view engine from Microsoft, I have my public timeline displaying!</p>
 
-<p><a href="http://dannydouglass.com/images/2010-11-06-simplify-using-xml-data-with-automapper-and-linqtoxml/Screenshot_TwitterAutoMapperXmlMappingDemo_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-11-06-simplify-using-xml-data-with-automapper-and-linqtoxml/Screenshot_TwitterAutoMapperXmlMappingDemo_thumb.png" alt="Screenshot_TwitterAutoMapperXmlMappingDemo" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-11-06-simplify-using-xml-data-with-automapper-and-linqtoxml/Screenshot_TwitterAutoMapperXmlMappingDemo_thumb.png"><img src="http://DannyDouglass.com/images/2010-11-06-simplify-using-xml-data-with-automapper-and-linqtoxml/Screenshot_TwitterAutoMapperXmlMappingDemo_thumb.png" alt="Screenshot_TwitterAutoMapperXmlMappingDemo" /></a></p>
 
 <p>I know we had a hard time finding a lot of content on how to leverage AutoMapper to map Xml sources, so hopefully this is as helpful to you as it was for us.  As I mentioned before, the source is available on my <a href="https://github.com/DannyDouglass/">GitHub page</a> (that I am just starting to utilize):</p>
 
@@ -282,16 +282,16 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
   <entry>
     
     <title type="html"><![CDATA[A Better Hg Command Line Interface: Console2 + PowerShell + Posh-Hg]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/10/27/console2powershellposhhg/"/>
+    <link href="http://DannyDouglass.com/blog/2010/10/27/console2powershellposhhg/"/>
     
     <updated>2010-10-27T07:52:08-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/10/27/console2powershellposhhg</id>
+    <id>http://DannyDouglass.com/blog/2010/10/27/console2powershellposhhg</id>
     
     <content type="html"><![CDATA[<p>Moving from Subversion to <a href="http://mercurial.selenic.com/">Mercurial</a> was more than a change from a centralized version control system to a distributed solution.  I also found myself moving away from the explorer integration provided by the <a href="http://tortoisehg.bitbucket.org/">Tortoise</a> products to the command line for the execution of my hg commands.  This approach is dramatically faster once you get used to the syntax, which really only takes a hot minute.</p>
 
 <p>Certain features in <a href="http://tortoisehg.bitbucket.org/">TortoiseHg</a> still provide visual advantages that I find useful, such as the visual repository log.  During an Agile.Net Bootcamp with <a href="http://www.lostechies.com/blogs/jimmy_bogard/">Jimmy Bogard</a> he showed us an collection of tools he utilizes to provide an improved Mercurial command line experience.  The final product is a more descriptive prompt that displays branch information, as well as the number and types of changes made since your last commit:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png" alt="posh-hg" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png" alt="posh-hg" /></a></p>
 
 <h3>1. Console 2</h3>
 
@@ -310,7 +310,7 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 
 <p>After executing that command you can verify the file was created:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png" alt="PowerShellProfileCreation" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/PowerShellProfileCreation_thumb.png" alt="PowerShellProfileCreation" /></a></p>
 
 <h3>3. Posh-Hg Download and PowerShell Integration</h3>
 
@@ -318,7 +318,7 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 
 <p>Posh-Hg was inspired by the <a href="http://github.com/dahlbyk/posh-git">Posh-Git</a>, which provides a “custom prompt and tab expansion when using Mercurial from within a Windows PowerShell command line”.  There’s more information on this <a href="http://www.jeremyskinner.co.uk/2010/04/21/using-mercurial-with-windows-powershell/">blog post</a> about Posh-Hg.  You will want to download this file and place it somewhere on disk.  <strong>Important</strong>:  Before unzipping, make sure to right-click on the posh-hg-1.0 zip file and <strong>Unblock</strong> it, otherwise you will run into security issues executing the scripts each and every time (very, very annoying):</p>
 
-<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/Capture_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-10-27-console2powershellposhhg/Capture_thumb.png" alt="Capture" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/Capture_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/Capture_thumb.png" alt="Capture" /></a></p>
 
 <p>Once you’ve unblocked the file you need to unzip it.  I recommend saving it the same location as your Windows PowerShell profile.  In my case that was <em>C:\Users\Danny\Documents\WindowsPowerShell</em>.  Now you are set to add posh-hg to you PowerShell profile.  Simply open your PowerShell profile file and add the following text to it, making sure to modify the path to the posh-hg <em>profile.example.ps1</em> file appropriately:</p>
 
@@ -332,13 +332,13 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 
 <p>If you needed to set your execution policy, you will need to close your current PowerShell prompt and open a new one for the changes to take affect and allow for your profile to be loaded.  Try navigation to a Hg repository on disk and you’ll see a much more friendly prompt:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/Capture2_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-10-27-console2powershellposhhg/Capture2_thumb.png" alt="Capture2" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/Capture2_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/Capture2_thumb.png" alt="Capture2" /></a></p>
 
 <h3>4. PowerShell Integration with Console2 and Posh-Hg</h3>
 
 <p>With everything installed and configured outside of Console2 we are set to add PowerShell to our Console2 installation.  You can <a href="http://DannyDouglass.com/wp-content/uploads/2010/10/console2-powershell-poshhg.zip">download</a> the files to update your Console2 installation (the console.xml file).  If you have not customized anything previously with Console2, you can just override the existing file without causing any harm. Drop the powershell.ico icon file in the Console2 directory and you are ready to test out the changes in Console2.  Open your console, navigate to a Mercurial repository on disk and you should see the changes:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/Capture_thumb1.png"><img src="http://DannyDouglass.github.io//github/images/2010-10-27-console2powershellposhhg/Capture_thumb1.png" alt="Capture" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/Capture_thumb1.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/Capture_thumb1.png" alt="Capture" /></a></p>
 
 <p>Here is a breakdown of the meaning the symbol/number combinations:</p>
 
@@ -369,10 +369,10 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
   <entry>
     
     <title type="html"><![CDATA[NuPack vs. Nu (Nubular) vs. OpenWrap]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/10/06/nupack-vs-nuproj-vs-openwrap/"/>
+    <link href="http://DannyDouglass.com/blog/2010/10/06/nupack-vs-nuproj-vs-openwrap/"/>
     
     <updated>2010-10-06T09:32:25-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/10/06/nupack-vs-nuproj-vs-openwrap</id>
+    <id>http://DannyDouglass.com/blog/2010/10/06/nupack-vs-nuproj-vs-openwrap</id>
     
     <content type="html"><![CDATA[<p>The <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0abac7a3-b302-4644-bd43-febf300b2c51">ASP.NET MVC 3 Beta</a> was unofficially released yesterday (as far as I can tell) and the release notes include a quote about a package manager named NuPack:</p>
 
@@ -421,10 +421,10 @@ set of PowerShell cmdlets.</p>
   <entry>
     
     <title type="html"><![CDATA[Presentation Materials from ALT.NET Presentation on Package Management]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/10/01/dcaltnet-package-management-presentation/"/>
+    <link href="http://DannyDouglass.com/blog/2010/10/01/dcaltnet-package-management-presentation/"/>
     
     <updated>2010-10-01T09:17:28-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/10/01/dcaltnet-package-management-presentation</id>
+    <id>http://DannyDouglass.com/blog/2010/10/01/dcaltnet-package-management-presentation</id>
     
     <content type="html"><![CDATA[<p>Below I have provided a variety of material/links from my presentation last night &ndash; “<strong>The Current State of Package Management in .NET</strong>”.  Please feel free to contact me using any of the communication channels available in the right column of my blog.  I would happy to provide any further information regarding <strong>Nu</strong> or <strong>OpenWrap</strong>, or just to discuss your thoughts on the topic of package management.</p>
 
@@ -468,10 +468,10 @@ set of PowerShell cmdlets.</p>
   <entry>
     
     <title type="html"><![CDATA[What’s Nu in the .NET World Part 2: Creating a Gem]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/08/11/whats-nu-in-the-dotnet-world-part2-creating-a-gem/"/>
+    <link href="http://DannyDouglass.com/blog/2010/08/11/whats-nu-in-the-dotnet-world-part2-creating-a-gem/"/>
     
     <updated>2010-08-11T20:39:37-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/08/11/whats-nu-in-the-dotnet-world-part2-creating-a-gem</id>
+    <id>http://DannyDouglass.com/blog/2010/08/11/whats-nu-in-the-dotnet-world-part2-creating-a-gem</id>
     
     <content type="html"><![CDATA[<p>If you are not familiar with the Nu project start by reading my <a href="http://dannydouglass.com/2010/08/whats-new-in-the-dotnet-world/">first post in this series</a> that gives an introduction to getting started with this promising tool.  As a quick reference I’ll post a paragraph from the last post introducing Nu:</p>
 
@@ -483,13 +483,13 @@ set of PowerShell cmdlets.</p>
 
 <p>After downloading the latest release for the Spark View Engine <a href="http://sparkviewengine.codeplex.com/releases/view/27601">here</a>, the first step was to create a directory to hold my gem specification anywhere on my machine, c:/Gems/SparkViewEngine was my choice:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb3.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb3.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb3.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb3.png" alt="image" /></a></p>
 
 <p><strong><em>Creating the Gem Specification</em> </strong>(GemSpec)</p>
 
 <p><a href="http://devlicio.us/blogs/rob_reynolds/default.aspx">Rob Reynolds</a> described this file as “the most important file for this entire process”.  The gemspec file will be named after the project – in this case it is named <strong>sparkviewengine.gemspec</strong> and will be placed inside my sparkviewengine directory.  While we are creating files we can also create a <strong>VERSION</strong> file that, you may have guessed, stores the version of the gem.  We now have a directory with 2 files:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb4.png" alt="image" /></a></p>
 
 <p>Below is the code from my <strong>sparkviewengine.gemspec</strong> file, you would simply replace the values with those applicable to the gem you are creating:</p>
 
@@ -525,18 +525,18 @@ end
 
 <p>For the SparkViewEngine gem we can simply copy the libraries from the bin directory of the Spark 1.1.0.0 release:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb5.png" alt="image" /></a></p>
 
 <p>and place them into a new <strong>lib</strong> directory in my SparkViewEngine gem directory:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb6.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb6.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb6.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb6.png" alt="image" /></a></p>
 
 <p><strong>Documentation</strong></p>
 
 <p>Any documentation can be stored in a <strong>docs</strong> directory.  I added the
 index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb7.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb7.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb7.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb7.png" alt="image" /></a></p>
 
 <p>That’s it for the setup!  My gem specification is ready to be built and uploaded to <a href="http://RubyGems.org">RubyGems.org</a>.</p>
 
@@ -545,11 +545,11 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
 <pre><code>gem build sparkviewengine.gemspec
 </code></pre>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb8.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb8.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb8.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb8.png" alt="image" /></a></p>
 
 <p>That creates my versioned gem:</p>
 
-<p><a href="http://dannydouglass.com//images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb9.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb9.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com//images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb9.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb9.png" alt="image" /></a></p>
 
 <p><strong><em>Pushing the Gem to RubyGems.org</em></strong></p>
 
@@ -558,7 +558,7 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
 <pre><code>gem push sparkviewengine-1.1.0.0.gem
 </code></pre>
 
-<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb10.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb10.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb10.png"><img src="http://DannyDouglass.com/images/2010-08-11-whats-nu-in-the-dotnet-world-part2-creating-a-gem/image_thumb10.png" alt="image" /></a></p>
 
 <p><strong>That’s all folks!</strong></p>
 
@@ -586,10 +586,10 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
   <entry>
     
     <title type="html"><![CDATA[What's Nu in the .NET World?]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/08/09/whats-new-in-the-dotnet-world/"/>
+    <link href="http://DannyDouglass.com/blog/2010/08/09/whats-new-in-the-dotnet-world/"/>
     
     <updated>2010-08-09T09:20:36-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/08/09/whats-new-in-the-dotnet-world</id>
+    <id>http://DannyDouglass.com/blog/2010/08/09/whats-new-in-the-dotnet-world</id>
     
     <content type="html"><![CDATA[<p>If you thought the word &ldquo;<em>Nu</em>&rdquo; in the title of this blog post was misspelled, you are in for a treat.  And trust me, you are not the only one who made that grammatical assumption.</p>
 
@@ -608,27 +608,27 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
 
 <p>The first step is to create a new ASP.NET MVC 2 application:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb.png" alt="image" /></a>)</p>
+<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb.png"><img src="http://DannyDouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb.png" alt="image" /></a>)</p>
 
 <p>Once the application is created I can quickly run it and see the screen that anyone who has read about or used ASP.NET MVC before is very familiar with:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb1.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb1.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb1.png"><img src="http://DannyDouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb1.png" alt="image" /></a></p>
 
 <p>Now that I have my project created I want to download the AutoFac library and bring it into my project.  Prior to Nu, I would do this by opening a browser, finding the AutoFac download page, download, possibly unzip the files, etc. Nu makes this much simpler.  First thing I want to do install Nu using the Ruby gem tool by simply executing the command <strong>gem install nu</strong>.</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/NuGemInstall_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-09-whats-new-in-the-dotnet-world/NuGemInstall_thumb.png" alt="NuGemInstall" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/NuGemInstall_thumb.png"><img src="http://DannyDouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/NuGemInstall_thumb.png" alt="NuGemInstall" /></a></p>
 
 <p>Once I have installed Nu, I can easily download the AutoFac gem by executing the command <strong>nu install autofac</strong>.</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb2.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb2.png" alt="image" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb2.png"><img src="http://DannyDouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/image_thumb2.png" alt="image" /></a></p>
 
 <p>Note that by default Nu will install your gems local (in a new <em>lib</em> directory) to the folder where you execute the <strong>nu install #somegem#</strong> command.  Taking a look at my <em>c:\projects\Nu_AspNetMvc2_Demo</em> directory I can see that two folders were created: .<em>nu</em> and <em>lib</em>.  The <em>lib </em>folder will hold all of the gems I install in this directory from here on out, unless I override the default at a later time.  I will not go into further details, but my AutoFac dlls are now stored inside of my <em>/lib/autofac </em>package directory.You can take a look at the <a href="http://dl.dropbox.com/u/5632950/Nu_AspNetMvc2_Demo.zip">example’s source</a> to see more about the package directory structure.</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/NuAutofacInstallFolders_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-09-whats-new-in-the-dotnet-world/NuAutofacInstallFolders_thumb.png" alt="NuAutofacInstallFolders" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/NuAutofacInstallFolders_thumb.png"><img src="http://DannyDouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/NuAutofacInstallFolders_thumb.png" alt="NuAutofacInstallFolders" /></a></p>
 
 <p>Currently Nu is in its early stages and I am still required to add the DLLs to my project manually, but very soon this will not be the case.  A Nu for Visual Studio plugin is in the works that will simplify this step – take a look at <a href="http://www.youtube.com/watch?v=0-1UPrKu3wg">this video preview</a> to see it in action.  I imagine there will be other ways to accomplish this as well.  For now, I will simply add the required references as I would with any other library I downloaded to my Visual Studio Project:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/ProjectReferences_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-09-whats-new-in-the-dotnet-world/ProjectReferences_thumb.png" alt="ProjectReferences" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/ProjectReferences_thumb.png"><img src="http://DannyDouglass.com/images/2010-08-09-whats-new-in-the-dotnet-world/ProjectReferences_thumb.png" alt="ProjectReferences" /></a></p>
 
 <p>Now all I need to do is follow <a href="http://code.google.com/p/autofac/wiki/MvcIntegration">these instructions</a> to hookup AutoFac 2 in my <em>global.asax.cs (code shown below)</em> and I am good to go! Running my project shows me that same familiar MVC homepage, however this time my controller factory is running using the AutoFac controller factory (see line 33 below):</p>
 
@@ -690,10 +690,10 @@ namespace Nu_AspNetMvc2_Demo
   <entry>
     
     <title type="html"><![CDATA[Mercurial: Create Remote Repositories Using PowerShell]]></title>
-    <link href="http://DannyDouglass.github.io//github/blog/2010/08/02/mercurial-create-remote-repositories-using-powershell/"/>
+    <link href="http://DannyDouglass.com/blog/2010/08/02/mercurial-create-remote-repositories-using-powershell/"/>
     
     <updated>2010-08-02T19:12:14-04:00</updated>
-    <id>http://DannyDouglass.github.io//github/blog/2010/08/02/mercurial-create-remote-repositories-using-powershell</id>
+    <id>http://DannyDouglass.com/blog/2010/08/02/mercurial-create-remote-repositories-using-powershell</id>
     
     <content type="html"><![CDATA[<p>In case you are not familiar with Mercurial (Hg), it is a Distributed Version Control System (DVCS) aimed at simplifying revision control.  The purpose of this post is not to introduce Mercurial, but you can read more about Mercurial at the following links to get better acquainted with the software:</p>
 
@@ -707,7 +707,7 @@ namespace Nu_AspNetMvc2_Demo
 
 <p>Now that we are all comfortable with Hg (the chemical symbol for Mercury and nickname for Mercurial), I would like to take present an issue I spent some time working on today.  There are several different <a href="http://mercurial.selenic.com/wiki/PublishingRepositories">publishing mechanisms</a> in Mercurial, but for the setup at my company we decided to simply use http being that our provider is only internally available and protected by several firewalls and other security measures.  We chose this approach over the more popular SSH publishing mechanism being that we are hosting our Mercurial installation on a Windows 2008 R2 server.  Had we installed it on a box running something other than Windows, SSH would have solved the problem I’m about to describe below.  Here’s a quick view of our basic setup:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-08-02-mercurial-create-remote-repositories-using-powershell/MercurialSetupOverHttp_thumb.png"><img src="http://DannyDouglass.github.io//github/images/2010-08-02-mercurial-create-remote-repositories-using-powershell/MercurialSetupOverHttp_thumb.png" alt="Mercurial Setup Over Http" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-08-02-mercurial-create-remote-repositories-using-powershell/MercurialSetupOverHttp_thumb.png"><img src="http://DannyDouglass.com/images/2010-08-02-mercurial-create-remote-repositories-using-powershell/MercurialSetupOverHttp_thumb.png" alt="Mercurial Setup Over Http" /></a></p>
 
 <p>One limitation when using http as a publishing mechanism is that you <a href="http://ry4an.org/unblog/UnBlog/2009-09-17">cannot create a repository remotely</a>; no if, ands, or buts about it.  Another twist was that our CM (Configuration Management) procedures dictate that our developers are not permitted to RDP into the Mercurial server.  This left us trying to decide how to allow developers to create repositories remotely since our http communication channel does not allow remote repository creation.</p>
 
