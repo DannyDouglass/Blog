@@ -13,7 +13,7 @@ footer: false
 
 You may have figured out by now that my name is Danny Douglass and I am a big fan of technology.  I am passionate about the latest and greatest technologies/trends, leadership, and business stories of both successes and failures of all kinds.  I find a lot of value and motiviation from reading great [publications](/bookshelf) - check them out for recommendations. Some of my most influential areas currently are Lean Startup, JavaScript, and Continuous Delivery.  In fact, I am both a co-organizer and speaker at the following meetup groups:
 
-- [DC Continuous Integration and Deployment Group](http://www.meetup.com/DC-continuous-integration/)  
+- [DC Continuous Integration, Delivery, and Deployment Group](http://www.meetup.com/DC-continuous-integration/)  
 - [DC ALT.NET](http://www.meetup.com/dcaltnet/)  
 
 ![Danny Douglass](http://farm4.static.flickr.com/3059/2324953362_9968ec2b7e_m.jpg) &nbsp;
