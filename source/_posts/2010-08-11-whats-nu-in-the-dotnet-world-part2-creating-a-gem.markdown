@@ -11,7 +11,7 @@ If you are not familiar with the Nu project start by reading my [first post in t
 
 **“Nu **is an open source tool built by [Dru Sellers](http://codebetter.com/blogs/dru.sellers/default.aspx) (and several others) that aims at bringing [Gems](http://rubygems.org/), one of Ruby’s most revered features, to the .NET world.  If you are not familiar with Gems I suggest you take a minute to [read up on them](http://docs.rubygems.org/read/book/3).  I would venture a bet that you are already familiar with at least one gem – [Ruby on Rails](http://rubyonrails.org).  The following line of code is all that is required to install the Ruby on Rails gem (after installing the Ruby library of course)…”
 
-This post is focused on sharing my experience in creating my first gem for the [Spark View Engine](http://sparkviewengine.com/).  I would be doing you a great disservice if I did not start by saying how easy it is to create a gem. Actually easy is the wrong phrase – **crazy easy** is more telling.  Since I would never ask you to take my word for it, it must mean it is time to show some code.
+This post is focused on sharing my experience in creating my first gem for the [Spark View Engine](http://sparkviewengine.com/).  I would be doing you a great disservice if I did not start by saying how easy it is to create a gem. Actually easy is the wrong phrase – **crazy easy** is more telling.  Since I would never ask you to take my word for it, it must mean it is time to show some code. <!-- more -->
 
 **_Getting Started_**
 

@@ -4,37 +4,30 @@
   <title><![CDATA[Danny Douglass]]></title>
   <link href="http://DannyDouglass.com/atom.xml" rel="self"/>
   <link href="http://DannyDouglass.com/"/>
-  <updated>2013-08-31T17:36:34-04:00</updated>
+  <updated>2013-09-01T00:10:03-04:00</updated>
   <id>http://DannyDouglass.com/</id>
   <author>
     <name><![CDATA[Danny Douglass]]></name>
-    
+    <email><![CDATA[ddouglass@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    
-    <title type="html"><![CDATA[How to: Create a Recursive Ruby Script to replace File/Directory Names and File Contents]]></title>
+    <title type="html"><![CDATA[Creating a Recursive Ruby Script to replace File/Directory Names and File Contents]]></title>
     <link href="http://DannyDouglass.com/blog/2011/02/24/create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents/"/>
-    
     <updated>2011-02-24T10:02:54-05:00</updated>
     <id>http://DannyDouglass.com/blog/2011/02/24/create-a-recursive-ruby-script-to-replace-file-and-directory-names-and-file-contents</id>
-    
     <content type="html"><![CDATA[<p>Over this past weekend I began templating a project structure that we use at my <a href="http://dannydouglass.com/aboutme/">day/evening/night job</a> to allow developers to simply execute a script and provide a few parameters to
 initialize a new development project (including build script, fxcop analysis, unit testing, visual studio projects, etc.).  I didn’t think this would take that long despite being relatively new to the Ruby world.</p>
 
 <p>Oddly enough, I had trouble finding similar examples on the <a href="http://www.urbandictionary.com/define.php?term=interwebs">interwebs</a> – even StackOverflow didn’t have the answer!  <a href="http://en.wikipedia.org/wiki/Hea%20rt_of_Darkness">The horror, the horror</a>!</p>
 
-<p>No matter, I’m a developer after all and <strike>should be</strike>, <em>better be </em>capable of handling this simple script.  I decided to start simple and just use the directory global searching method to recursively get everything within my project template’s directory:</p>
+<p>No matter, I’m a developer after all and <strike>should be</strike>, <em>better be </em>capable of handling this simple script.   <!-- more -->I decided to start simple and just use the directory global searching method to recursively get everything within my project template’s directory:</p>
 
-<pre><code>def packageInitiator( startDirectory )  
-    Dir.glob( startDirectory ).each do | path | 
-        puts path
-    end
-end  
-packageInitiator( './**/*' )
-</code></pre>
+<div><script src='https://gist.github.com/6402016.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
 
 <p>OK, good start.  Now I have all the items (files and directories) within my current executing directory.  I figured it would be easy to then replace the templated text in the directory and file paths at that point.</p>
 
@@ -54,79 +47,40 @@ invalidating paths used later in the loop.  For example, <em>/project/store</em
 
 <p>When we try to change <em>/project/store/hats</em> ruby throws an error because the root path <em>/project/store</em> would have changed.  The fix for this was simple,reverse the array and go from <strong>bottom-up</strong>:</p>
 
-<pre><code>def packageInitiator( startDirectory )   
-    directoryItems = Dir.glob( startDirectory ).reverse
-    directoryItems.each do | path | 
-        puts path
-    end
-end  
-packageInitiator( './**/*' )
-</code></pre>
+<div><script src='https://gist.github.com/6402038.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
 
 <p>Better.  Time to add the logic to replace the placeholders I put in the file and directory names.  At this point I don’t care about whether the item is a file or directory so I treat them the same:</p>
 
-<pre><code>def packageInitiator( startDirectory, patternToReplace )   
-    directoryItems = Dir.glob( startDirectory ).reverse
-    directoryItems.each do | path | 
-        if( path.include? patternToReplace )
-            oldPath = File.dirname(path)
-            newPath = oldPath + '/' + File.basename( path ).gsub( patternToReplace, 'MyNewProjectName' )
+<div><script src='https://gist.github.com/6402046.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
 
-            File.rename( path, newPath )    
-        end
-    end
-end  
-packageInitiator( './**/*', '{projectName}' )
-</code></pre>
 
 <p>Much better.  Now I need to determine if I am dealing with a file or a directory since I will need to replace the contents of files where I find the placeholder text as well.  Turns out that was pretty darn simple.</p>
 
 <h4>Final Script</h4>
 
-<pre><code>def replaceFileContents( path, patternToReplace, newProjectName )
-    fileContents = File.read ( path )
-    fileContents = fileContents.gsub( patternToReplace, newProjectName )
-    File.open( path, 'w' ) { | file | file.puts fileContents }
-end  
-def packageInitiator( startDirectory, patternToReplace, newProjectName )   
-    directoryItems = Dir.glob( startDirectory ).reverse
-    directoryItems.each do | path | 
+<div><script src='https://gist.github.com/6402052.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
 
-        # ignoring ruby scripts so I don't change contents of this file
-        if( FileTest.file? ( path ) and File.extname( path ) != '.rb' )
-                replaceFileContents( path, patternToReplace, newProjectName )
-        end
-
-        if( path.include? patternToReplace )
-            oldPath = File.dirname(path)
-            newPath = oldPath + '/' + File.basename( path ).gsub( patternToReplace, newProjectName )
-
-            File.rename( path, newPath )    
-        end
-
-    end
-end  
-packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
-</code></pre>
 
 <p>I can think of a lot of ways to improve this for more complicated scenarios, but this worked just fine for my needs.  Hopefully this helps someone else too.  And as I mentioned previously, I’m relatively new to Ruby and welcome and constructive feedback or suggestions for improvement that any Ruby experts have for me.</p>
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[Simplify Using Xml Data with AutoMapper and Linq-to-Xml]]></title>
     <link href="http://DannyDouglass.com/blog/2010/11/06/simplify-using-xml-data-with-automapper-and-linqtoxml/"/>
-    
     <updated>2010-11-06T13:50:09-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/11/06/simplify-using-xml-data-with-automapper-and-linqtoxml</id>
-    
     <content type="html"><![CDATA[<p>I recently ran into a scenario at work that required manually consuming several SOAP web services, which I’m sure you can imagine was rather monotonous. A co-worker (Seth Carney) and I tried a few different approaches, but we finally settled on a solution that simplified consumption of the xml and ultimately made the code more testable.  That solution centered around leveraging <a href="https://github.com/jbogard/AutoMapper">AutoMapper</a>, an open source object-object mapping tool, to create a link between the <a href="http://msdn.microsoft.com/en-us/library/system.xml.linq.xelement.aspx">XElements</a> returned in the SOAP messages and custom contracts we created &ndash; in a reusable manner.</p>
 
-<p>I put together a quick demo that shows how you could use the same approach to consume and display the <a href="http://api.twitter.com/1/statuses/public_timeline.xml">Twitter Public Timeline</a> (using the API’s Xml response type).</p>
+<p>I put together a quick demo that shows how you could use the same approach to consume and display the <a href="http://api.twitter.com/1/statuses/public_timeline.xml">Twitter Public Timeline</a> (using the API’s Xml response type).
+ <!-- more --></p>
 
-<p><strong>Note</strong>: The source code for the following example can be found on my GitHub page: <a href="https://github.com/DannyDouglass/AutoMapperXmlMappingDemo">https://github.com/DannyDouglass/AutoMapperXmlMappingDemo</a></p>
+<p><strong>Note</strong>: The source code for the following example can be found on my GitHub page:
+<a href="https://github.com/DannyDouglass/AutoMapperXmlMappingDemo">https://github.com/DannyDouglass/AutoMapperXmlMappingDemo</a></p>
 
 <h3>1. Getting the Project Setup</h3>
 
@@ -276,22 +230,19 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 
 <p>Cheers!</p>
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[A Better Hg Command Line Interface: Console2 + PowerShell + Posh-Hg]]></title>
     <link href="http://DannyDouglass.com/blog/2010/10/27/console2powershellposhhg/"/>
-    
     <updated>2010-10-27T07:52:08-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/10/27/console2powershellposhhg</id>
-    
     <content type="html"><![CDATA[<p>Moving from Subversion to <a href="http://mercurial.selenic.com/">Mercurial</a> was more than a change from a centralized version control system to a distributed solution.  I also found myself moving away from the explorer integration provided by the <a href="http://tortoisehg.bitbucket.org/">Tortoise</a> products to the command line for the execution of my hg commands.  This approach is dramatically faster once you get used to the syntax, which really only takes a hot minute.</p>
 
 <p>Certain features in <a href="http://tortoisehg.bitbucket.org/">TortoiseHg</a> still provide visual advantages that I find useful, such as the visual repository log.  During an Agile.Net Bootcamp with <a href="http://www.lostechies.com/blogs/jimmy_bogard/">Jimmy Bogard</a> he showed us an collection of tools he utilizes to provide an improved Mercurial command line experience.  The final product is a more descriptive prompt that displays branch information, as well as the number and types of changes made since your last commit:</p>
 
-<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png" alt="posh-hg" /></a></p>
+<p><a href="http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png"><img src="http://DannyDouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png" alt="posh-hg" /></a>
+ <!-- more --></p>
 
 <h3>1. Console 2</h3>
 
@@ -363,17 +314,13 @@ packageInitiator( './**/*', '{projectName}', 'MyNewProjectName' )
 
 <p>Hope you enjoy this as much as I did – thanks to <a href="www.lostechies.com/blogs/jimmy_bogard/">Jimmy Bogard</a> for the exposure to Posh-Hg!</p>
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[NuPack vs. Nu (Nubular) vs. OpenWrap]]></title>
     <link href="http://DannyDouglass.com/blog/2010/10/06/nupack-vs-nuproj-vs-openwrap/"/>
-    
     <updated>2010-10-06T09:32:25-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/10/06/nupack-vs-nuproj-vs-openwrap</id>
-    
     <content type="html"><![CDATA[<p>The <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0abac7a3-b302-4644-bd43-febf300b2c51">ASP.NET MVC 3 Beta</a> was unofficially released yesterday (as far as I can tell) and the release notes include a quote about a package manager named NuPack:</p>
 
 <blockquote><p>ASP.NET MVC 3 includes NuPack Package Manager, which is an integrated package management tool for adding libraries and tools to Visual Studio projects. For the most part, it automates the steps that developers take todayto get a library into their source tree.</p>
@@ -384,7 +331,7 @@ set of PowerShell cmdlets.</p>
 
 <p>For more information about NuPack, visit <a href="http://nupack.codeplex.com/">http://nupack.codeplex.com/</a> and read the <a href="http://nupack.codeplex.com/documentation?title=Getting%20Started">Getting Started Guide</a>.</p></blockquote>
 
-<p>Unfortunately, the CodePlex site is currently not published and many are waiting to take a look at what’s being released here by Microsoft.  There seems to be a good deal of confusion on Twitter revolving around this project so I thought a quick post outlining each of the 3 main package managers in .NET would be helpful.  I’ve listed them in alphabetical order:</p>
+<p>Unfortunately, the CodePlex site is currently not published and many are waiting to take a look at what’s being released here by Microsoft.  There seems to be a good deal of confusion on Twitter revolving around this project so I thought a quick post outlining each of the 3 main package managers in .NET would be helpful. <!-- more -->  I’ve listed them in alphabetical order:</p>
 
 <p><strong><em>Update</em></strong>:  Thanks to a comment below from Keith Dahlby…it appears that NuPack may be a joint effort between the creators of Nu and Microsoft.  You can read more about it on the <a href="http://www.outercurve.org/News/articleType/ArticleView/articleId/20/Outercurve-Foundation-Announces-NuPack-as-Fifth-Project-in-ASPNET-Open-Source-Gallery">Outercurve Foundation announcement.</a></p>
 
@@ -415,20 +362,16 @@ set of PowerShell cmdlets.</p>
 
 <p>Stay tuned for more…</p>
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[Presentation Materials from ALT.NET Presentation on Package Management]]></title>
     <link href="http://DannyDouglass.com/blog/2010/10/01/dcaltnet-package-management-presentation/"/>
-    
     <updated>2010-10-01T09:17:28-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/10/01/dcaltnet-package-management-presentation</id>
-    
     <content type="html"><![CDATA[<p>Below I have provided a variety of material/links from my presentation last night &ndash; “<strong>The Current State of Package Management in .NET</strong>”.  Please feel free to contact me using any of the communication channels available in the right column of my blog.  I would happy to provide any further information regarding <strong>Nu</strong> or <strong>OpenWrap</strong>, or just to discuss your thoughts on the topic of package management.</p>
 
-<p>I want to thank everyone that battled the weather last night to make it to the presentation.  I really enjoyed my first opportunity to present at an ALT.NET event.  Also, thanks to <a href="http://weblogs.asp.net/Podwysocki/">Matthew Podwysocki</a> for allowing me to speak last night.  I believe I’ve included everything below that I discussed last night. If you take time to review the slideshow, I’d recommended using one of the two links below the embedded slideshow as they contain the speaker notes with a lot of information.</p>
+<p>I want to thank everyone that battled the weather last night to make it to the presentation.  I really enjoyed my first opportunity to present at an ALT.NET event.  Also, thanks to <a href="http://weblogs.asp.net/Podwysocki/">Matthew Podwysocki</a> for allowing me to speak last night.  I believe I’ve included everything below that I discussed last night. If you take time to review the slideshow, I’d recommended using one of the two links below the embedded slideshow as they contain the speaker notes with a lot of information. <!-- more --></p>
 
 <p><a href="https://docs.google.com/present/view?id=dg63kd2x_69f9mmx5cx">Link to Google Presentation</a> |
 <a href="http://DannyDouglass.com/downloads/The_Current_State_of_Package_Management_in_ASPNET.ppt">Download PowerPoint</a><br/>
@@ -462,22 +405,18 @@ set of PowerShell cmdlets.</p>
 
 <p>Cheers!</p>
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[What’s Nu in the .NET World Part 2: Creating a Gem]]></title>
     <link href="http://DannyDouglass.com/blog/2010/08/11/whats-nu-in-the-dotnet-world-part2-creating-a-gem/"/>
-    
     <updated>2010-08-11T20:39:37-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/08/11/whats-nu-in-the-dotnet-world-part2-creating-a-gem</id>
-    
     <content type="html"><![CDATA[<p>If you are not familiar with the Nu project start by reading my <a href="http://dannydouglass.com/2010/08/whats-new-in-the-dotnet-world/">first post in this series</a> that gives an introduction to getting started with this promising tool.  As a quick reference I’ll post a paragraph from the last post introducing Nu:</p>
 
 <p><strong>“Nu </strong>is an open source tool built by <a href="http://codebetter.com/blogs/dru.sellers/default.aspx">Dru Sellers</a> (and several others) that aims at bringing <a href="http://rubygems.org/">Gems</a>, one of Ruby’s most revered features, to the .NET world.  If you are not familiar with Gems I suggest you take a minute to <a href="http://docs.rubygems.org/read/book/3">read up on them</a>.  I would venture a bet that you are already familiar with at least one gem – <a href="http://rubyonrails.org">Ruby on Rails</a>.  The following line of code is all that is required to install the Ruby on Rails gem (after installing the Ruby library of course)…”</p>
 
-<p>This post is focused on sharing my experience in creating my first gem for the <a href="http://sparkviewengine.com/">Spark View Engine</a>.  I would be doing you a great disservice if I did not start by saying how easy it is to create a gem. Actually easy is the wrong phrase – <strong>crazy easy</strong> is more telling.  Since I would never ask you to take my word for it, it must mean it is time to show some code.</p>
+<p>This post is focused on sharing my experience in creating my first gem for the <a href="http://sparkviewengine.com/">Spark View Engine</a>.  I would be doing you a great disservice if I did not start by saying how easy it is to create a gem. Actually easy is the wrong phrase – <strong>crazy easy</strong> is more telling.  Since I would never ask you to take my word for it, it must mean it is time to show some code. <!-- more --></p>
 
 <p><strong><em>Getting Started</em></strong></p>
 
@@ -580,20 +519,16 @@ index.html and zipped up the samples that came with the Spark 1.1.0.0 release:</
 </ul>
 
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[What's Nu in the .NET World?]]></title>
     <link href="http://DannyDouglass.com/blog/2010/08/09/whats-new-in-the-dotnet-world/"/>
-    
     <updated>2010-08-09T09:20:36-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/08/09/whats-new-in-the-dotnet-world</id>
-    
     <content type="html"><![CDATA[<p>If you thought the word &ldquo;<em>Nu</em>&rdquo; in the title of this blog post was misspelled, you are in for a treat.  And trust me, you are not the only one who made that grammatical assumption.</p>
 
-<p><strong>Nu </strong>is an open source tool built by <a href="http://codebetter.com/blogs/dru.sellers/default.aspx">Dru Sellers</a> that aims at bringing <a href="http://rubygems.org/">Gems</a>, one of Ruby’s most revered features, to the .NET world.  If you are not familiar with Gems I suggest you take a minute to <a href="http://docs.rubygems.org/read/book/3">read up on them</a>.  I would venture a bet that you are already familiar with at least one gem – <a href="http://rubyonrails.org">Ruby on Rails</a>.  The following line of code is all that is required to install the Ruby on Rails gem (after installing the Ruby library of course):</p>
+<p><strong>Nu </strong>is an open source tool built by <a href="http://codebetter.com/blogs/dru.sellers/default.aspx">Dru Sellers</a> that aims at bringing <a href="http://rubygems.org/">Gems</a>, one of Ruby’s most revered features, to the .NET world.  If you are not familiar with Gems I suggest you take a minute to <a href="http://docs.rubygems.org/read/book/3">read up on them</a>.  I would venture a bet that you are already familiar with at least one gem – <a href="http://rubyonrails.org">Ruby on Rails</a>.   <!-- more -->The following line of code is all that is required to install the Ruby on Rails gem (after installing the Ruby library of course):</p>
 
 <pre><code>gem install rails 
 </code></pre>
@@ -684,17 +619,13 @@ namespace Nu_AspNetMvc2_Demo
 
 <p><a href="http://dotnetshoutout.com/Whats-Nu-in-the-NET-World-DannyDouglasscom"><img src="http://dotnetshoutout.com/image.axd?url=http%3A%2F%2Fdannydouglass.com%2F2010%2F08%2Fwhats-new-in-the-dotnet-world%2F" alt="Shout it" /></a></p>
 ]]></content>
-    
   </entry>
   
   <entry>
-    
     <title type="html"><![CDATA[Mercurial: Create Remote Repositories Using PowerShell]]></title>
     <link href="http://DannyDouglass.com/blog/2010/08/02/mercurial-create-remote-repositories-using-powershell/"/>
-    
     <updated>2010-08-02T19:12:14-04:00</updated>
     <id>http://DannyDouglass.com/blog/2010/08/02/mercurial-create-remote-repositories-using-powershell</id>
-    
     <content type="html"><![CDATA[<p>In case you are not familiar with Mercurial (Hg), it is a Distributed Version Control System (DVCS) aimed at simplifying revision control.  The purpose of this post is not to introduce Mercurial, but you can read more about Mercurial at the following links to get better acquainted with the software:</p>
 
 <ul>
@@ -705,7 +636,7 @@ namespace Nu_AspNetMvc2_Demo
 </ul>
 
 
-<p>Now that we are all comfortable with Hg (the chemical symbol for Mercury and nickname for Mercurial), I would like to take present an issue I spent some time working on today.  There are several different <a href="http://mercurial.selenic.com/wiki/PublishingRepositories">publishing mechanisms</a> in Mercurial, but for the setup at my company we decided to simply use http being that our provider is only internally available and protected by several firewalls and other security measures.  We chose this approach over the more popular SSH publishing mechanism being that we are hosting our Mercurial installation on a Windows 2008 R2 server.  Had we installed it on a box running something other than Windows, SSH would have solved the problem I’m about to describe below.  Here’s a quick view of our basic setup:</p>
+<p>Now that we are all comfortable with Hg (the chemical symbol for Mercury and nickname for Mercurial), I would like to take present an issue I spent some time working on today. <!-- more --> There are several different <a href="http://mercurial.selenic.com/wiki/PublishingRepositories">publishing mechanisms</a> in Mercurial, but for the setup at my company we decided to simply use http being that our provider is only internally available and protected by several firewalls and other security measures.  We chose this approach over the more popular SSH publishing mechanism being that we are hosting our Mercurial installation on a Windows 2008 R2 server.  Had we installed it on a box running something other than Windows, SSH would have solved the problem I’m about to describe below.  Here’s a quick view of our basic setup:</p>
 
 <p><a href="http://dannydouglass.com/images/2010-08-02-mercurial-create-remote-repositories-using-powershell/MercurialSetupOverHttp_thumb.png"><img src="http://DannyDouglass.com/images/2010-08-02-mercurial-create-remote-repositories-using-powershell/MercurialSetupOverHttp_thumb.png" alt="Mercurial Setup Over Http" /></a></p>
 
@@ -725,7 +656,6 @@ namespace Nu_AspNetMvc2_Demo
 
 <p>It can’t be that easy, can it? Well, good news – it is that simple!  With those changes you should be able to remote manage (create and delete) your Mercurial (Hg) repositories via PowerShell.  Hopefully this helps you save some time in your setup of Mercurial – a very awesome, and my current favorite, Version Control System.</p>
 ]]></content>
-    
   </entry>
   
 </feed>

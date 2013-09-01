@@ -10,8 +10,10 @@ title: Simplify Using Xml Data with AutoMapper and Linq-to-Xml
 I recently ran into a scenario at work that required manually consuming several SOAP web services, which I’m sure you can imagine was rather monotonous. A co-worker (Seth Carney) and I tried a few different approaches, but we finally settled on a solution that simplified consumption of the xml and ultimately made the code more testable.  That solution centered around leveraging [AutoMapper](https://github.com/jbogard/AutoMapper), an open source object-object mapping tool, to create a link between the [XElements](http://msdn.microsoft.com/en-us/library/system.xml.linq.xelement.aspx) returned in the SOAP messages and custom contracts we created - in a reusable manner.
 
 I put together a quick demo that shows how you could use the same approach to consume and display the [Twitter Public Timeline](http://api.twitter.com/1/statuses/public_timeline.xml) (using the API’s Xml response type).
+ <!-- more -->
 
-**Note**: The source code for the following example can be found on my GitHub page: [https://github.com/DannyDouglass/AutoMapperXmlMappingDemo](https://github.com/DannyDouglass/AutoMapperXmlMappingDemo)
+**Note**: The source code for the following example can be found on my GitHub page: 
+[https://github.com/DannyDouglass/AutoMapperXmlMappingDemo](https://github.com/DannyDouglass/AutoMapperXmlMappingDemo)
 
 ### 1. Getting the Project Setup
 

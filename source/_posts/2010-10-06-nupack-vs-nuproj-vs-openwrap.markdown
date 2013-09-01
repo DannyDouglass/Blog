@@ -17,7 +17,7 @@ set of PowerShell cmdlets.
 
 > For more information about NuPack, visit [http://nupack.codeplex.com/](http://nupack.codeplex.com/) and read the [Getting Started Guide](http://nupack.codeplex.com/documentation?title=Getting%20Started).
 
-Unfortunately, the CodePlex site is currently not published and many are waiting to take a look at what’s being released here by Microsoft.  There seems to be a good deal of confusion on Twitter revolving around this project so I thought a quick post outlining each of the 3 main package managers in .NET would be helpful.  I’ve listed them in alphabetical order:
+Unfortunately, the CodePlex site is currently not published and many are waiting to take a look at what’s being released here by Microsoft.  There seems to be a good deal of confusion on Twitter revolving around this project so I thought a quick post outlining each of the 3 main package managers in .NET would be helpful. <!-- more -->  I’ve listed them in alphabetical order:
 
 **_Update_**:  Thanks to a comment below from Keith Dahlby…it appears that NuPack may be a joint effort between the creators of Nu and Microsoft.  You can read more about it on the [Outercurve Foundation announcement.](http://www.outercurve.org/News/articleType/ArticleView/articleId/20/Outercurve-Foundation-Announces-NuPack-as-Fifth-Project-in-ASPNET-Open-Source-Gallery)
 

@@ -9,7 +9,7 @@ title: Presentation Materials from ALT.NET Presentation on Package Management
 
 Below I have provided a variety of material/links from my presentation last night - “**The Current State of Package Management in .NET**”.  Please feel free to contact me using any of the communication channels available in the right column of my blog.  I would happy to provide any further information regarding **Nu** or **OpenWrap**, or just to discuss your thoughts on the topic of package management.
 
-I want to thank everyone that battled the weather last night to make it to the presentation.  I really enjoyed my first opportunity to present at an ALT.NET event.  Also, thanks to [Matthew Podwysocki](http://weblogs.asp.net/Podwysocki/) for allowing me to speak last night.  I believe I’ve included everything below that I discussed last night. If you take time to review the slideshow, I’d recommended using one of the two links below the embedded slideshow as they contain the speaker notes with a lot of information.
+I want to thank everyone that battled the weather last night to make it to the presentation.  I really enjoyed my first opportunity to present at an ALT.NET event.  Also, thanks to [Matthew Podwysocki](http://weblogs.asp.net/Podwysocki/) for allowing me to speak last night.  I believe I’ve included everything below that I discussed last night. If you take time to review the slideshow, I’d recommended using one of the two links below the embedded slideshow as they contain the speaker notes with a lot of information. <!-- more -->
 
 [Link to Google Presentation](https://docs.google.com/present/view?id=dg63kd2x_69f9mmx5cx) |
 [Download PowerPoint](http://DannyDouglass.com/downloads/The_Current_State_of_Package_Management_in_ASPNET.ppt)  

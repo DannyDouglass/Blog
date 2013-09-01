@@ -1,178 +1,40 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-html {
-	background: #FFFFFF;
-}
-
-
-body {
-	font-family: $sans;
-	max-width: 750px;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-
-	a:hover { color: #3b185f; background: #f9f8fa; }
-
-	> header {
-		background: #FFFFFF;
-        padding-top: .5em;
-		h1 {
-			a, a:visited, a:hover {
-				color: #8C8C8C;
-			}
-		}
-	}
-
-	> nav {
-		background: #FFFFFF;
-		font-size: 20px;
-		border-bottom: 1px solid #F2F2F2;
-		padding-left: 0px;
-		padding-right: 0px;
-
-		a {
-           text-decoration: none;
-           font-size: 22px;
-           padding-left: 10px;
-           padding-right: 10px;
-        }
-		form .search {
-			border-radius: 0.2em 0.2em 0.2em 0.2em;
-			box-shadow: none;
-			border: 0px;
-			padding-top: 0.3em;
-			padding-bottom: 0.3em;
-			padding-left: 0.5em;
-			padding-right: 0.5em;
-		}
-
-		li + li {
-			border-left: 0px;
-
-			a {
-				border: 0px;
-			}
-		}
-	}
-
-	> div {
-		background: #FFFFFF;
-		border-bottom: 0px;
-
-		> div {
-			background: #FFFFFF;
-			border-right-width: 0px;
-		}
-	}
-
-	> footer {
-	    text-align: center;
-		background: #FFFFFF;
-		text-shadow: none;
-		color: #888;
-	  	padding-left: 0;
-	  	padding-right: 0;
-		border-top: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-		font-size: 15px;
-	}
-
-	#content {
-		> article {
-		    padding-top: 2em;
-			padding-left: 0px;
-			padding-right: 0px;
-		}
-
-		> div {
-			> article, > section {
-				padding-left: 0px;
-				padding-right: 0px;
-			}	
-		}
-	}
-}
-
-article {
-
-	.entry-content {
-		h3 {
-			font-style: italic
-		}
-	}
-
-	ul, ol {
-		margin-left: 2em;
-	}
-
-	a, a:visited {
-		color: #1863A1;
-	}
-}
-
-#content {
-	div.pagination {
-		margin: 0 10px;  
-		padding-bottom: 1.5em;
-		margin-top: 4em;
-		position: relative;
-		text-align: center;		
-		border-top: dotted 1px #D1D1D1;
-		border-bottom: dotted 1px #D1D1D1;
-		color: #888;
-	}
-
-	div.pagination a {
-		color: #888;
-	}	
-
-	.blog-index {
-		article {
-			padding-top: 2em;
-
-			header {
-                padding-top: 2em;
-				padding-left: 0;
-  				padding-right: 0;
-			}
-		}
-
-		h1 {
-			a {
-				font-weight: 400;
-			}
-
-			a:hover {
-				text-decoration: none;
-			}
-		}
-	}
-
-	.hentry {
-		h1.entry-title {
-			font-weight: 400;
-			font-size: 2.2em;
-		}
-	}
-	
-}
-
-figure.code {
-	.highlight {
-		background: #fafafa !important;
-
-		.gutter {
-			display: none;
-		}
-	}
-}
-
-.pre-code, html .gist .gist-file .gist-syntax .highlight pre, .highlight code {
-	background: #fafafa !important;
-}
-
-aside {
-	display: none;
-}
+body { font-size: 1em; }
+.container .left-col #header .profilepic img { padding: 20px; background-color: #efefef; }
+header h2 { font-size: 1.2em; font-weight: normal; }
+.container .left-col { opacity: .75; }
+ul li, ol li, blockquote { margin-left: 25px; }
+article .entry-content { line-height: 1.8; }
+img { border: solid 1px #999; margin-left: 10px; }
+.container .mid-col footer.inner { margin-top: 20px; }
+.entry-content .gist .gist-file .gist-meta { margin-left: 0px; }
+.gist { margin: 20px 0; }
+.entry-content .social {
+    a{
+      @include border-radius(50%);
+      @include inline-block;
+      text-indent: 40px;
+      margin: 0 15px 15px 0;
+      @include square(28px);
+      &.facebook{
+        background: image-url('social/facebook.png') center no-repeat #3B5998; border: 1px solid #3B5998;
+      }
+      &.google{
+        background: image-url('social/google.png') center no-repeat #C83D20; border: 1px solid #C83D20;
+      }
+      &.twitter{
+        background: image-url('social/twitter.png') center no-repeat #55CFF8; border: 1px solid #55CFF8;
+      }
+      &.github{
+        background: image-url('social/github.png') center no-repeat rgb(175,182,202); border: 1px solid rgb(175,182,202);
+      }
+      &.linkedin{
+        background: image-url('social/linkedin.png') center no-repeat #005A87; border: 1px solid #005A87;
+      }
+      &.document{
+        background: image-url('social/document.png') center no-repeat #666; border: 1px solid #999;
+      }
+    }
+  }

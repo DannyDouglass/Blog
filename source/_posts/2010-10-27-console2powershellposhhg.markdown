@@ -12,7 +12,7 @@ Moving from Subversion to [Mercurial](http://mercurial.selenic.com/) was more th
 Certain features in [TortoiseHg](http://tortoisehg.bitbucket.org/) still provide visual advantages that I find useful, such as the visual repository log.  During an Agile.Net Bootcamp with [Jimmy Bogard](http://www.lostechies.com/blogs/jimmy_bogard/) he showed us an collection of tools he utilizes to provide an improved Mercurial command line experience.  The final product is a more descriptive prompt that displays branch information, as well as the number and types of changes made since your last commit:
 
 [![posh-hg](/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png)](http://dannydouglass.com/images/2010-10-27-console2powershellposhhg/poshhg_thumb.png)
-
+ <!-- more -->
 ### 1. Console 2
 
 [http://sourceforge.net/projects/console/](http://sourceforge.net/projects/console/)
